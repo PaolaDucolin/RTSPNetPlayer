@@ -197,8 +197,7 @@ namespace WebEye
             {
                 using (var writer = new BinaryWriter(stream))
                 {
-                    writer.Write(IsX86Platform ?
-                        Resources.StreamPlayer : Resources.StreamPlayer64);
+                    writer.Write(Resources.StreamPlayer64);
                 }
             }
 
